@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* 공통 조합*/
+.errMsg {margin-top: 10px; margin-bottom: 10px; opacity: 0; font-size: 14px;line-height: 24px; color: #ff0000; display: inline-block;}
+.btnArea::after {content: "";display: block; clear: both;}
+.btnArea {text-align: right;font-size: 0; margin-top: 30px;}
+.btn {min-width: 40px;border: 1px solid transparent;cursor: pointer;}
+.btn1 {float: left; font-size: 20px;height: 50px;padding: 0 40px;}
+.btn2 {float: right; font-size: 20px;height: 50px;padding: 0 40px;}
+.btnPrimary { background-color: #f3c200;color: #1a1a1a;}
+.btnDark { background-color: #1a1a1a;color: #fff;}
+.btnOutline {background-color: #fff;border: 1px solid #f3c200; color: #f3c200;}
+.btnRound {border-radius: 10px;}
+.btn+.btn {margin-left: 10px;}
+.mg40{margin: 40px 0;}
+.mg40 p{line-height: 26px;}
+.mt40{margin-top: 40px;}
+/* 공통 조합 끝 */
+/* 로 그 인 */
+.locationWrp {padding: 15px 0; margin: 0 auto;background-color: #1a1a1a;}
+.locationWrp .container {width: 1180px;margin: 0 auto;}
+.locationWrp .container .home {display: inline-block; width: 20px;height: 18px;background: url(../images/ico_home.png) no-repeat left center;text-indent: -9999px;vertical-align: middle;}
+.locationWrp .container span {color: #fff;display: inline-block;vertical-align: top;}
+.locationWrp .container span::before {content: "";display: inline-block;background: url(../images/ico_arrow.png) no-repeat left center;width: 5px;height: 9px;margin: 0 10px;vertical-align: middle;}
+#lgnFrmWp {width: 500px;margin: 0 auto;padding: 60px 0 160px;}
+#lgnFrmWp .subTit {text-align: center;}
+#lgnFrmWp .subTit h2 {font-size: 48px;}
+#lgnFrmWp .subTit p {font-size: 18px;line-height: 20px;color: #4b4b4b;}
+#lgnFrmWp form .lgnInput input { width: 100%; height: 50px; line-height: 50px; border: 1px solid #e3e3e3;}
+#lgnFrmWp form .lgnInput>div {position: relative;}
+#lgnFrmWp form .lgnInput>div label { position: absolute;left: 10px; top: 29%;transform: translateY(-50%);color: #888;}
+#lgnFrmWp form .row {font-size: 14px;margin-bottom: 29px;}
+#lgnFrmWp form .row::after {content: "";display: block;clear: both;}
+/* 아이디 저장 체크박스 css */
+#lgnFrmWp form .row .idSave {float: left;}
+#lgnFrmWp form .row .idSave label {display: block; position: relative;padding-left: 26px;}
+#lgnFrmWp form .row .idSave input[type=checkbox]+label::before {content: ""; display: inline-block; width: 20px; height: 20px;border-radius: 3px;background-color: #e6e6e6; position: absolute;left: 0;top: -4px;}
+#lgnFrmWp form .row .idSave input { display: none;}
+#lgnFrmWp form .row .idSave input[type=checkbox]:checked+label::before { box-sizing: border-box; background: #e6e6e6 url(../images/check_img1.png) no-repeat center center;}
+/* 아이디 저장 체크박스 end */
+#lgnFrmWp form .row .idSrch { display: block;  float: right;}
+#lgnFrmWp form .lgnBtn .btn { margin-bottom: 40px; font-size: 20px; font-weight: bold;  width: 100%;  background-color: #f3c200;  height: 60px; color: #1a1a1a;  cursor: pointer;  outline: none;}
+#lgnFrmWp form .joinGrp { border-top: 1px solid #888; padding-top: 30px;}
+#lgnFrmWp form .joinGrp .grpTxt { float: left;  font-size: 14px;  line-height: 20px;  padding: 10px 0;}
+#lgnFrmWp form .joinGrp .joinBtn { float: right; display: block;  width: 240px;  height: 60px;  line-height: 60px;  border: 1px solid #f3c200;  text-align: center;}
+/* JOIN_agree 부분 */
+#lgnFrmWrp {  width: 500px;}
+#joinFrmWrp { width: 740px;}
+.memberWrp { margin: 0 auto;  padding-top: 80px;padding-bottom: 160px;}
+.memberWrp .subTit {text-align: center;}
+.memberWrp .subTit h2 { font-size: 48px; margin-bottom: 18px;}
+.memberWrp .subTit p {font-size: 18px;color: #4b4b4b;}
+#joinFrmWrp .joinStep {font-size: 14px;text-align: center; margin: 30px 0 60px 0;}
+#joinFrmWrp .joinStep ol {display: inline-block;}
+#joinFrmWrp .joinStep ol::after {content: "";  display: block;clear: both;}
+#joinFrmWrp .joinStep ol li { background-color: #f6f6f6; color: #888; float: left; width: 120px; height: 30px;  line-height: 30px; border-radius: 20px 0 10px;}
+
+#joinFrmWrp .joinStep ol li+li { margin-left: 20px;}
+#joinFrmWrp .joinStep ol li:nth-child(1)::before { content: "01.";display: inline-block;}
+#joinFrmWrp .joinStep ol li:nth-child(2)::before { content: "02.";   display: inline-block;}
+#joinFrmWrp .joinStep ol li:nth-child(3)::before { content: "03."; display: inline-block;}
+#joinFrmWrp .joinStep ol li.on {  background-color: #1a1a1a; color: #fff;}
+#joinFrmWrp .row1 {position: relative;}
+#joinFrmWrp .row1 .viewPage { position: absolute; right: 0;top: 2px;}
+#joinFrmWrp .row2 {  position: relative;  margin-top: 20px;}
+#joinFrmWrp .row2 .viewPage { position: absolute; right: 0;  top: 2px;}
+#joinFrmWrp .agreeBox { height: 190px; overflow-y: scroll; border: 1px solid #e3e3e3; font-size: 14px; line-height: 22px; color: #888; padding: 30px; box-sizing: border-box;}
+/* JOIN_agree 부분 */
+/* JOIN 부분 */
+#lgnFrmWp .subTit>p{padding: 30px; font-size: 16px;}
+#joinFrm .bow { font-size: 0; margin-top: 20px; position: relative;}
+#joinFrm .bow label{ font-size: 16px; position: absolute; left: 8px; top: 18px; color: #d9d9d9;}
+#joinFrm .inp { display: inline-block; width: 540px; height: 50px;border: 2px solid #e3e3e3;  box-sizing: border-box;}
+#joinFrm .inp input { border: none;  width: 100%;  height: 100%; padding-left: 20px;box-sizing: border-box; background-color: transparent;}
+/* #joinFrm .maillAgree input[type=radio] {position: absolute; left: -9999px;}
+#joinFrm .maillAgree input[type=radio]+label::before { content: ""; display: inline-block; width: 20px; height: 20px;border-radius: 50%; background-color: #e6e6e6; position: absolute;  left: 0;  top: -4px;}
+#joinFrm .maillAgree input[type=radio]:checked+label::before { background: #e6e6e6 url(../images/ico_radio.png) no-repeat left top;} */

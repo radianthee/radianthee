@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* font settings */
+html{font-size: 100%;}
+body{font-family: 'Exo 2','Noto Sans KR',sans-serif; color:#000;line-height: 1.5;} /* 이러면 영어를 제외한 나머지는 noto sans KR로 된다. */
+
+/* reset */
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,p{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+address{font-style: normal;}
+
+/* 공통 */
+.aligner{max-width: 1200px; margin: 0 auto; position: relative;}
+
+/* -------------------- 1280px 이상 PC - Desktop ver. -------------------- */
+.open{display: none; width: 5rem; height: 5rem; border: 0;
+    background: url(../images/drawer-opener-black.svg) no-repeat 50% 50%;
+    background-size: 2rem 2rem; text-indent: -9999px;
+    cursor: pointer; position: absolute; right: 0; top: 0;
+} /* 아이콘 중간 50% 50% */
+.drawer .head .close{display: none;}
+
+.header{background-color: #fff; position: fixed; left: 0; top: 0; padding: 0 15px; box-sizing: border-box; width: 100%; height: 84px; z-index: 15; box-shadow: 0 0 30px 0 rgba(0,0,0,0.2); border-bottom: 1px solid #e0e0e0;}
+
+.header .aligner{height: 100%;} /* 하위요소 포지션적용 /  높이값 0이라서 직접지정 함 */
+.header .aligner > h1{position: absolute; left: 0; top: 50%; transform: translateY(-50%);} /* aligner에서부터 50% */
+.header .aligner > h1 > a{display: block;}
+.header .aligner > h1 > a > img{width: 144px; height: 36px;}
+
+.nav{position: absolute; right: 150px; top: 50%; transform: translateY(-50%);}
+.nav > ul{}
+.nav > ul::after{content: ""; display: block; clear: both;}
+.nav > ul > li{float: left; position: relative;} /* BRAND 2Depth의 relative */
+.nav > ul > li+li{margin-left: 90px;}
+.nav > ul > li > a{display: block; font-size: 18px; font-weight: 700; padding: 23px 0 29px;}
+
+.nav > ul > li > a::before{content: ""; display: block; width: 0%; height: 3px; background-color: #000; position: absolute; left: 0; bottom: 24px; transition: all 0.4s;} /*  all은 width , height 둘다 한다는 뜻 */
+.nav > ul > li > a:hover:before{width: 100%;} /* before랑 after는 겹쳐있는데 애프터가 보이는거임 bottom px값을 다르게하면 앎 */
+
+.nav > ul > li > a::after{content: ""; display: block; width: 0%; height: 3px; background-color: #e40112; position: absolute; left: 0; bottom: 24px; transition: width 0.6s ease-in 0.2s;}
+.nav > ul > li > a:hover:after{width: 100%;} /* transition: 프로퍼티 , 듀레이션 , 타이밍펑션 , 딜레이; 순서이다. */
+.nav > ul > li > ul{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 220px; padding:  15px 0 20px;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.1);
+    position: absolute; top: 80px;
+    visibility: hidden; opacity: 0;
+} /* BRAND subMenu */
+.nav > ul > li > ul > li > a{display: block; padding: 10px 10px; font-size: 18px;  letter-spacing: -1px;  color: #716d6c; text-align: center;} /* subMenu의 a태그 */
+.nav > ul > li > ul.active{visibility: visible;}
+.nav > ul > li.parent > ul{
+    left: 20%; opacity: 0;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+}
+.nav > ul > li.parent.on > ul{left: 50%; opacity: 1;}
+
+
+.lang{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.lang a{display: inline-block;}
+.lang a.mob{display: none;}
+
+/* 메인 비주얼 영역 -bxSlider 수정 */
+.slide-wrap{position: relative;}
+.slide-wrap .main-msg{
+    font-size: 40px; font-weight: 500; line-height: 1.2; color: #fff;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 10;
+}
+.slide-wrap.main-slide {}
+.slide-wrap.main-slide li{}
+.slide-wrap .main-slide li p.txt{}
+.slide-wrap .bx-wrapper {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 0 none transparent;
+    background: transparent;
+}
+.slide-wrap .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    z-index: 2;
+}
+.slide-wrap .bx-wrapper .bx-prev{left: 10px; background: url(../images/angle-left-solid.svg) no-repeat center center;}
+.slide-wrap .bx-wrapper .bx-next{right: 10px; background: url(../images/angle-right-solid.svg) no-repeat center center;}
+
+.slide-wrap .bx-wrapper .bx-controls-auto{display: none;}
+
+
+
+.contents{max-width: 1200px; margin: 0 auto; padding: 133px 0 157px; }
+.contents .sec-2{padding-top: 185px;}
+.contents .sec-2 .heading{}
+.heading{margin-bottom: 40px;}
+.heading img{width: auto; height: 146px;}
+.paragraph{font-size: 21px; line-height: 2; letter-spacing:  -1px; color: #4b4b4b; padding: 40px 0;}
+
+.more{text-align: right; font-size: 20px;}
+.more a{display: inline-block; text-decoration: underline; color: #4d4d4d;}
+
+.vd{ position: relative; padding-bottom: 56.25%; margin-top: 85px;}
+.vd iframe{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+
+/* ---------- 브랜드리스트 ---------- */
+.brand{padding: 40px 0;}
+.brand ul{margin: -25px -18px;}
+.brand ul::after{content: ""; display: block; clear: both;}
+.brand ul li{float: left; width: 25%; box-sizing: border-box; padding: 25px 18px;} /* 브랜드리스트임 */
+.brand ul li a{display: block;}
+.brand ul li a span{display: block;}
+.brand ul li a .thumb{height: 250px; position: relative; border: 1px solid #cbcbcb;} /* 이미지 주변 테두리 */
+
+.brand ul li a .thumb img{width: 50%; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: all 0.3s ease-out;}
+.brand ul li:hover a .thumb img{width: 60%;}
+
+.brand ul li a .name{font-size: 22px; font-weight: 700; padding: 30px 0; text-align: center; color: #343434;}
+
+.footer .logo{width: 132px; height: 18px; padding-bottom: 20px;} 
+.footer .logo img{width: 100%; height: 100%; } /* background-img로 들어갔을 때 */
+
+.footer{padding: 0 15px; border-top: 1px solid #d9d9d9;}
+.footer .aligner{padding: 100px 0;}
+
+.footer .address{font-size: 17px; line-height: 2; color: #2e2e2e;} /*  17px * 1.2em = line-height */
+.footer .Copyright{margin-top: 15px; font-size: 15px; color: #aaa;}
+
+/* -------------------- 1280px 이하 데스크탑 버전 -------------------- */
+@media (max-width:1280px){
+    body{}
+}
+
+
+/* tablet ver. */
+@media (max-width:1024px){
+    body{}
+}
+
+
+/* -------------------- 0~767px 까지의 Mobile ver. */ /* 바뀌거나 새로 추가된 것만 쓰고 유지되는 스타일은 지운다. */
+@media (max-width:767px){
+    html{font-size: 70%;}
+    body{}
+    .open{display: block;}
+    .drawer{background-color: #fff; width: 100%; height: 100vh; position: fixed; right: -100%; top: 0; transition: right 0.5s ease;-ms-transition: right 0.5s ease; -moz-transition: right 0.5s ease;} /* 화면높이가 변할때 자동으로 감지해서 변하는 단위 vh - 너비는 vw */ /* right 0%으로 하면 메뉴 나타남 */
+    .drawer.active{right: 0;}
+    .drawer .head {position: relative; height: 7rem;}
+    .drawer .body{border-top: 1px solid #e0e0e0; padding: 4.2rem 0;}
+    .drawer .head .close{ 
+        display: block; border: 0; width: 5rem; height: 5rem; background: url(../images/close.svg) no-repeat 50% 50%;
+        background-size: 2rem 2rem; text-indent: -9999px; cursor: pointer; position: absolute; right: 0; top: 0;
+    }
+    .header{height: 5rem;}
+    .nav{position: static; transform: translateY(0);} /* static은 포지션의 기본 값 적용했다가 해제할 때 씀 -좌표지정 불가 */
+    .nav > ul > li{float: none;} /* 1Depth 메뉴 */ /* float를 했다가 해제할 때 none; */
+    .nav > ul > li+li{margin-left: 0;} /* 1Depth 메뉴들이 왼쪽으로 다 붙음 / 공백이 사라지니까. */
+    .nav > ul > li > a{padding: 1rem 3.2rem; font-size: 1.8rem; line-height: 1.2;} /* 상위body를 가져올거면 rem, 모바일상위에서 가져올거면 em */
+    .nav > ul > li:nth-child(2) > a{background: #fff url(../images/arrow-close.svg) no-repeat right 36px top 50%; background-size: 16px auto;} /* 1depth의 2번 브랜드에만 화살표 넣기 */
+    .nav > ul > li > a:hover{background-color: #f8f8f8;}
+    .nav > ul > li > a::before{display: none;}
+    .nav > ul > li > a::after{display: none;}
+    .nav > ul > li > ul{ position: static; padding: 1rem 0; transform: translateX(0); left: 0; width: 100%; box-shadow: 0 0 0 0 rgba(0,0,0,0);} /* BRAND의 2 Depth position 해제 */
+    .nav > ul > li.parent > ul{display: none; left: 0; top: 0; transform: translateX(0);}
+    .nav > ul > li.parent > ul.active{display: block; background-color: yellow;}
+    .nav > ul > li > ul > li > a{padding: 0.8rem 3.2rem 0.8rem 4.2rem; font-size: 1.3rem;text-align: left;} /* subMenu의 a태그 */
+    .lang{position: static; transform: translateY(0); text-align: right; padding: 2rem 0;} /* 데스크탑에서 아예 안 적혀있는데 모바일에서 적용가능 */
+    .lang a{position: relative; padding: 0 20px;}
+    .lang a::before{content: ""; display: block; position: absolute; left: 0; top: 8px; width: 1px; height: 12px; background-color: #000;}
+    .lang a:nth-child(3):before{display: none;}
+    .lang a.pc{display: none;}
+    .lang a.mob{display: inline-block;}
+
+    .contents{ padding: 5rem 1.5rem; } /* 5rem = 56px */
+    .contents .sec-2{padding-top: 9rem;} /* 9rem - 100px */ /* brandlist 상단 공백 */
+    
+    .heading img{height: 8rem;}
+    .paragraph{font-size: 1.4rem; padding: 2rem 0;}
+
+    .more{font-size: 1.4rem;} /* 1.4rem은 16px임(15.68px) */ /* 더보기 크기 수정 */
+
+    /* 브랜드 리스트 */
+    .brand ul{margin: -0.5rem -0.5rem;}
+    .brand ul li{width: 50%; padding: 0.5rem;} /* 브랜드리스트 전체크기 수정 */
+    .brand ul li a .thumb{height: 15rem;}
+    .brand ul li a .thumb img{width: 38%;} /* 브랜드리스트 사진크기 */
+    .brand ul li:hover a .thumb img{width: 48%;} /* 브랜드리스트 사진 호버시 확대되는 크기 */
+    .brand ul li a .name{padding: 1rem 0; font-size: 1.4rem;} /* 브랜드리스트 상호명 크기 */
+    
+    .footer .aligner{padding: 7rem 0 2.5rem;}
+    .footer .address{font-size: 1rem; line-height: 1.8;}
+    .footer .Copyright{margin-top: 0.8rem; font-size: 1rem;}
+
+    .drawer .body{border-top: 1px solid #e0e0e0;}
+} /* ========== // 미디어쿼리 모바일 767이하 ========== */

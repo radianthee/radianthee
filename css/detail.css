@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* detail */
+.detail-wrap{max-width: 1905px; margin: 0 auto; margin-top: 84px;}
+.detail-wrap .wrapper{width: 100%; position: relative;}
+.detail-wrap .wrapper img{width: 100%;}
+.detail-wrap .more-site {display: block; position: absolute; left: 368px; top: 540px; background-color: #22ff11; padding: 8px; border-radius: 15px;}
+.detail-wrap .more-site a{ color: #1a1a1a; font-size: 20px; }
+/* about me */
+.contents{max-width: 1600px; margin: 0 auto; padding: 80px 0 157px; }
+.contents .self-intro{margin-top: 150px;}
+.pf2{padding-top: 280px;}
+.self-intro .heading {width: 1180px; margin: 0 auto; height: 146px;}
+.self-intro .heading img{ height: 146px;}
+.paragraph{font-size: 21px; line-height: 27px; position: relative; left: 200px; letter-spacing:  -1px; color: #4b4b4b; padding: 40px 0;}
+.self-wrap{max-width: 1600px; margin: 220px auto 0;}
+.self-wrap .self-wrapper{max-width: 1600px;}
+.self-wrap .self-wrapper img{width: 100%;}
+
+
+@media (max-width:768px){
+    .detail-wrap .wrapper{margin-top: -28px;}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지</title>
+    <link rel="stylesheet" href="../../common/css/style2.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- ========== util header ========== -->
+        <div id="cBody">
+            <div class="subWrap">
+                <div class="lnbArea">
+                    <div class="shareArea">
+                        <div class="share"><a href="#"><span class="blind">공유</span></a></div>
+                        <div class="print"><a href="#"><span class="blind">인쇄</span></a></div>
+                    </div>
+                </div> <!-- // lnbArea -->
+                <h2>로그인</h2>
+                <div class="container">
+                    <div class="loginWrap">
+                        <form name="" id="" method="" action="">
+                            <fieldset>
+                                <legend>회원 로그인</legend>
+                                <p>회원아이디와 비밀번호를 입력하세요.</p>
+                                <div class="loginBox">
+                                    <div class="row">
+                                        <label for="loginID">아이디</label>
+                                        <input type="text" class="inp_text wd500" id="loginID">
+                                    </div>
+                                    <div class="row">
+                                        <label for="loginPW">비밀번호</label>
+                                        <input type="password" class="inp_text wd500" id="loginPW">
+                                    </div>
+                                    <div class="checkWrap">
+                                        <input type="checkbox" id="saveID">
+                                        <label for="saveID">아이디 저장</label>
+                                    </div>
+                                    <ul class="findLink">
+                                        <li><a href="#">아이디 찾기</a></li>
+                                        <li><a href="#">비밀번호 찾기</a></li>
+                                    </ul>
+                                    <div class="btnArea"> <!-- 이래야 위 아래로 생성된다 (block효과) p태그로도 가능 br도 가능 -->
+                                        <ul> <!-- ul , li 없이 버튼이랑 a 태그를 p로 감싸도 가능. -->
+                                            <li><button type="button" id="loginBtn" class="Btn">로그인</button></li>
+                                            <li><a href="../join/join_step1.html">회원가입</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- // container -->
+            </div>
+        </div> <!-- // cBody -->
+    </div>
+</body>
+</html>

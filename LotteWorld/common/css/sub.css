@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+/* 서브페이지 공통영역 */
+#cBody{}
+.lnbArea{width: 1170px; margin: 0 auto; padding-top: 30px;}
+.lnbArea{display: block;}
+.lnbArea::after{content: ""; display: block; clear: both;}
+.lnbArea .lnb{float: left; padding-top: 10px;}
+.lnbArea .shareArea{float: right;}
+
+.lnbArea .lnb{background-color: royalblue}
+.lnbArea .lnb::after{content: ""; display: block; clear: both;}
+.lnbArea .lnb .home{float: left; border-right: 2px solid #e1e1e1; background: url(../images/home_btn.png) no-repeat 0 50%; display: inline-block; width: 36px; height: 30px;}
+.lnbArea > .lnb > div{float: left; margin-left: 20px; position: relative;}
+.lnbArea > .lnb > div.oneD{margin-left: 26px;} /* 여기가 oneD */
+.lnbArea .lnb .thrD{display: none;}
+.lnbArea > .lnb > div > a{float: left; display: inline-block; height: 30px; line-height: 30px; padding-right: 30px; background: url(../images/lnb_icon.png) no-repeat right top;}
+/* .lnbArea .lnb .Depth{} Depth라고 이름을 지정해주고 하나로 작성해도 됨 */
+/* .lnbArea > .lnb > div > a{} 라고 div안에 a를 지정해줘도 됨 (꺽새 해줘야 다른 디비전들이 안 잡힘) */
+.lnbArea > .lnb > div > div{display: none; position: absolute; left: -20px; top: 50px; padding: 25px;border: 1px solid #e1e1e1; background-color: #fff;}
+.lnbArea > .lnb > div > .moreMenu a{display: block; margin-top: 17px; white-space: nowrap;} /* white-space: nowrap; 줄바꿈이 일어나지않게 해줌 */
+.lnbArea > .lnb > div > .moreMenu a:first-child{margin-top: 0;}
+/* dsp:block; 해야 줄이 가로로 바뀐다. a 태그(인라인)이니까 */
+.lnbArea .shareArea{background-color: royalblue;}
+.lnbArea .shareArea > div{float: left;} /* share , print 둘다 플루트 레프트임 */
+.lnbArea .shareArea .share{}
+.lnbArea .shareArea .print{margin-left: 10px;}
+.lnbArea .shareArea  div a{display: block; width: 50px; height: 50px; border: 1px solid red;}
+.lnbArea .shareArea .share a{background: url(../images/share_btn.png) no-repeat;} /* 애초에 사진이 중앙정렬된거라 0 50% 생략 해도 됨 */
+.lnbArea .shareArea .print a{background: url(../images/print_btn.png) no-repeat;} /* 애초에 사진이 중앙정렬된거라 0 50% 생략 해도 됨 */
+
+#cBody .subWrap h2{font-size: 50px; font-weight: bold; padding-top: 40px; color:#000; text-align: center;} /* 롯데월드에서 자주 씀 */
+
+/* 즐길거리영역 */
+
+/* 요금우대혜택 영역 */
+
+
+/* 참여프로그램 영역 */
+
+/* 이용가이드 영역 */
+
+
+/* 공지사항 검색영역 */
+.srchType1{text-align: center; margin-top: 80px;}
+.srchType1 > div{display: inline-block;}
+.srchType1 .srchSel{float: left; margin-right: 10px;}
+.srchType1 > div .srchSel select{height: 54px;padding: 0 20px; border: 1px solid #e1e1e1;}
+.srchType1 .inp_bx{float: left;}
+.srchType1 .inp_bx input{padding:  3px 56px 3px 20px; width: 307px; height: 46px; border: 1px solid #e1e1e1;}
+.srchType1 #srchBtn{float: left;}
+
+/* 공지사항 table 영역 */
+.tableType1{margin-top: 50px;}
+.tableType1 table{width: 100%;}
+.tableType1 table thead{ border-top: 2px solid #e1e1e1;}
+.tableType1 table thead tr th{border-bottom: 1px solid #e1e1e1; height: 60px; font-weight: normal;}
+.tableType1 table tbody{}
+.tableType1 table tbody tr td{border-bottom: 1px solid #e1e1e1; height: 30px; padding: 17px 0; text-align: center;}
+.tableType1 table tbody tr .txt_left{text-align: left;}
+.tableType1 table tbody tr .txt_left a:hover{text-decoration: underline;font-weight: bold;}
+
+.paging{border: 1px solid blue;margin-top: 80px;}
+.paging .pagination{text-align: center;}
+.paging .pagination li{display: inline-block; margin-left: 10px; border: 1px solid magenta;}
+.paging .pagination li a{display: block; width: 48px; height: 48px;border-radius: 24px; font-weight: bold; color: #000; line-height: 46px;}
+.paging .pagination li a:hover{ background-color: rgb(174, 0, 255); color: #fff;}
+
+
+/* ----------------------------------------- */
+.wd580{width: 580px;}
+.wd500{width: 500px;}
+.wd320{width: 320px;}
+.wd175{width: 175px;}
+.wd105{width: 105px;}
+
+/* ========== 회원가입 - 정보입력========== */
+.joinstep{}
+.joinstep .step{}
+.joinstep .step::after{content: "";display: block; clear: both;}
+.joinstep .step li{float: left; width: 33.333%; height: 50px; line-height: 47px; text-align: center; position: relative;}
+.joinstep .step li.on{background-color: cadetblue;}
+.joinstep .step li.on::after{content: "";display: block; width: 100%; height: 3px;background-color: #f443c4;position: absolute; left: 0; bottom: 0;}
+/* li::before 는 약관동의 아래 생기는 Bar를 만든 것. after로 만들어도 됨. 애프터로하면 바로 아래에 Bar가 생긴다. */
+/* 차이점은 ::before로 만들면 li에 포지션 릴리티브 해주고 Before에 앱솔루트 0 0 해줘야함. */
+
+
+/* 회원가입 - 약관동의 영역 */
+.joinstep1 .policyBox, /* 약관 scroll css Y축 스크롤 같은 css이기때문에 , 를 활용한다 {}는 없앤다. */
+.joinstep1 .privacyBox{
+    height: 200px;padding: 40px;box-sizing: border-box; overflow-y: scroll; border: 1px solid #9f9f9f;
+    font-size: 14px; line-height: 2em; color: #666
+} /* class 이름을 하나 더 줘서 box로 맞추고 해도된다. */
+.joinstep1 .checkWrap{background-color: palevioletred;text-align: right; padding-right: 40px;} /* 약관동의 체크박스 관련 */
+.joinstep1 .checkWrap label{background-color: cyan; display: inline-block; padding-left: 8px; margin-top: -4px;}
+/*  label한테 디스플레이 인라인블럭을 한다. */
+
+
+/* 회원가입 - 회원정보입력 영역 */
+.tableType2{}
+.tableType2 table{width: 100%;}
+.tableType2 table tbody{}
+.tableType2 table tbody tr{}
+.tableType2 table tbody tr th{border-bottom: 1px solid black; text-align: left;  padding: 10px 0 10px 20px;} /* 부가정보입력 아래 줄 */
+.tableType2 table tbody tr th span{font-weight: 700; color: #ddd;}
+.tableType2 table tbody tr td{border-bottom: 1px solid black; padding: 10px 0 10px 20px;} /* 체크박스들 아래 줄 */
+
+.joinstep2 .inp_text{padding: 12px 20px; border:  1px solid #ddd; box-sizing: border-box; height: 50px;}
+.joinstep2 .sel{padding: 12px 20px; border:  1px solid #ddd; height: 50px;}
+.joinstep2 .inp_bx{display: inline-block; border: 1px solid #ddd; width: 140px;}
+.joinstep2 .inp_bx label{display: inline-block; padding-left: 8px; margin-top: -4px;}
+
+/* 회원가입 - 가입완료 영역 */
+.joinstep3 .con{text-align: center;}
+.joinstep3 .con .ico{display: block;}
+.joinstep3 .btnArea a{display: inline-block; font-size: 18px; font-weight: 500; width: 200px; height: 60px; line-height: 60px; border-radius: 30px; color: #fff; background-color: #000;}
+/* a태그 명령어는 line-height를 height랑 같은 값을 줘야 중앙으로 글씨가 온다. button 태그랑 다름 */
+
+/* 회원가입 공통버튼 */
+.btnArea{text-align: center;} /* 가입신청 버튼 중앙정렬 인라인요소만 간다. */
+.btnArea .Btn{width: 174px; height: 44px;border-radius: 22px;font-size: 20px;}
+.btnArea #cancelBtn{border: 1px solid #bbb; background-color: #fff; color: #000;}
+.btnArea #agreeBtn,
+.btnArea #registerBtn{border: 1px solid #ffa200; background-color: #ffa200; color: #fff;}
+
+/* 로그인영역 */
+.loginWrap{width: 500px; margin: 0 auto;} /* 로그인페이지 전체 중앙정렬 */
+.loginWrap .loginBox{}
+.loginWrap .inp_text{padding: 12px 20px; border:  1px solid #ddd; box-sizing: border-box; height: 50px;}
+.loginWrap .loginBox .row{position: relative; background-color: magenta;}
+.loginWrap .loginBox .row:nth-child(2){margin-top: 8px;} /* 비밀번호 입력란을 8px 띄움 */
+.loginWrap .loginBox .row label{position: absolute; left: 20px; top: 18px; font-size: 14px; color: #c7c7c7;}
+.loginWrap .loginBox .checkWrap{}
+.loginWrap .loginBox .checkWrap label{background-color: mediumaquamarine;display: inline-block; padding-left: 8px; }
+.loginWrap .loginBox .findLink{text-align: center;}
+.loginWrap .loginBox .findLink li{display: inline-block; position: relative;padding: 0 10px;}
+.loginWrap .loginBox .findLink li+li::after{content: ""; display: block; position: absolute; left: 0; top: 12px; height: 14px; border-left: 2px solid #e7e7e7;}
+.loginWrap .loginBox .findLink li a{display: block; padding: 10px;}
+.loginWrap .loginBox .btnArea ul{}
+.loginWrap .loginBox .btnArea ul li{margin-top: 8px;}
+.loginWrap .loginBox .btnArea ul li a{display: inline-block; font-size: 20px; width: 174px; height: 44px; border-radius: 22px; box-sizing: border-box; border: 1px solid #000;}
+
+.btnArea #loginBtn{border: 1px solid #ffa200; background-color: #ffa200; color: #fff;}
+
+
+
+
+
+
+
+
+
+

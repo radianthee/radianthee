@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 메인 비주얼 수정 */
+.main-title{max-width: 1905px; height: 765px; margin: 84px auto 0 auto; background-image: linear-gradient(to right #fff , #e0e0e0);} 
+.main-title li{max-width: 1180px; height: 765px; margin: 0 auto;} 
+.main-title li .int-tit{width: 100%; font-size: 60px; font-weight: 700; padding-top: 135px;} 
+.main-title li .int-txt{width: 100%; display: block; font-size: 24px; font-weight: 600; padding-top: 90px;} 
+.contents{max-width: 1280px; margin: 0 auto; padding: 80px 0 157px; }
+.contents .self-intro{margin-top: 150px;}
+.heading{margin-bottom: 40px;}
+.paragraph{font-size: 21px; line-height: 27px; color: #4b4b4b; padding: 40px 0;}
+.more{text-align: right; font-size: 20px;}
+.more a{display: inline-block; text-decoration: underline; color: #4d4d4d;}
+.pf2{margin-top: 220px;}
+/*  Portfolio List  */
+.pf-list ul{margin: -25px -18px;}
+.pf-list ul::after{content: ""; display: block; clear: both;}
+.pf-list ul li{float: left; width: 25%; box-sizing: border-box; padding: 25px 18px;}
+.pf-list ul li a{display: block;}
+.pf-list ul li a span{display: block;}
+.pf-list ul li a .thumb{height: 250px; position: relative; border: 1px solid #cbcbcb;}
+.pf-list ul li a .thumb img{width: 50%; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: all 0.3s ease-out;}
+.pf-list ul li:hover a .thumb img{width: 60%;}
+.pf-list ul li .edit{opacity: 0; transition: all 0.6s ease;}
+.pf-list ul li:hover .edit{opacity: 1;}
+.pf-list ul li .edit img{display: inline-block; width: 45px; height: 45px;}
+.pf-list ul li a .name{font-size: 22px; font-weight: 700; margin-top: 30px; text-align: center; color: #343434;}

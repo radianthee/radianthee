@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>행복은 간장밥 로그인</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/member.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/style2.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="hdrTop">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="../../main/index.html"><img src="../../images/logo_2.png" alt="logo"></a>
+                </h1>
+                <div class="util">
+                    <a href="../join/join_agree.html" class="join"><span>로그인</span></a>
+                    <a href="login.html" class="login"><span>로그인</span></a>
+                </div>
+            </div>
+            <!-- // H container -->
+        </div>
+        <!-- // hdrTop -->
+        <div class="gnbWrap">
+            <div class="container">
+                <nav>
+                    <ul id="gnb">
+                        <li>
+                            <a href="#">행복은 간장밥</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#"><span>브랜드 스토리</span></a></li>
+                                    <li><a href="#"><span>BI</span></a></li>
+                                    <li><a href="#"><span>CEO인사말</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">메뉴소개</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#"><span>메뉴소개</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">매장안내</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#"><span>가까운 매장찾기</span></a></li>
+                                    <li><a href="#"><span>우수매장</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">소통공간</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#"><span>뉴스</span></a></li>
+                                    <li><a href="#"><span>이벤트</span></a></li>
+                                    <li><a href="#"><span>SNS</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">가맹문의</a>
+                            <div class="dep2 dep2_last">
+                                <ul>
+                                    <li><a href="#"><span>창업경쟁력</span></a></li>
+                                    <li><a href="#"><span>인테리어</span></a></li>
+                                    <li><a href="#"><span>창업안내</span></a></li>
+                                    <li><a href="#"><span>성공스토리</span></a></li>
+                                    <li><a href="#"><span>창업관련 FAQ</span></a></li>
+                                    <li><a href="#"><span>창업문의</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- // G container -->
+        </div>
+        <!-- // gnbWrap -->
+    </header>
+    <!-- // header -->
+    <div class="locationWrp">
+        <div class="container">
+            <a href="#" class="home">홈</a>
+            <span>로그인</span>
+        </div> <!-- // container -->
+    </div>
+    <div id="lgnFrmWp" class="memberWrp">
+        <div class="subTit">
+            <h2>로그인</h2>
+            <p>회원 아이디와 비밀번호로 로그인하세요.</p>
+        </div>
+        <form name="" method="post" id="loginForm" action="">
+            <fieldset>
+                <legend class="blind">회원 로그인</legend>
+                <div class="lgnInput">
+                    <div class="name">
+                        <label for="userId">이메일 입력</label>
+                        <input type="text" id="userId" placeholder="">
+                        <p class="errMsg emailMsg">
+                            <!-- <em>이메일 형태로 입력해주세요.</em> -->
+                        </p>
+                    </div>
+                    <div class="passW">
+                        <label for="userPw">비밀번호 입력</label>
+                        <input type="password" id="userPw" placeholder="">
+                        <p class="errMsg pwMsg">
+                            <!-- <em>비밀번호를 확인해주세요.</em> -->
+                        </p>
+                    </div>
+                </div> <!-- // lgnInput -->
+                <div class="row">
+                    <div class="idSave">
+                        <input type="checkbox" id="saveId">
+                        <label for="saveId">이메일 저장</label>
+                    </div>
+                    <div class="idSrch">
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호찾기</a>
+                    </div>
+                </div>
+                <div class="lgnBtn">
+                    <button type="submit" class="btn">로그인</button>
+                </div>
+                <div class="joinGrp">
+                    <div class="grpTxt">회원으로 가입하시면 다양한<br>메뉴를 이용하실 수 있습니다.</div>
+                    <div><a href="../join/join_agree.html" class="joinBtn">회원가입</a></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer id="footer">
+        <div class="fTop">
+            <div class="container">
+                <div class="linkWrap">
+                    <a href="#">이용안내</a>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                    <a href="#">이메일무단수집거부</a>
+                </div>
+                <div class="snsWrap">
+                    <a href="https://www.facebook.com/haengbab" class="icoF" target="black">
+                        <span>공식페이스북</span>
+                    </a>
+                    <a href="https://blog.naver.com/haengbab" class="icoB" target="black">
+                        <span>공식블로그</span>
+                    </a>
+                    <a href="https://www.instagram.com/haengbab_official" class="icoI" target="black">
+                        <span>공식인스타그램</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- // fTop -->
+        <div class="fBot">
+            <div class="container">
+                <div class="col_left">
+                    <p class="col_logo"><img src="../../images/ico_footer_logo.png"></p>
+                    <div class="col_info">
+                        <address>행복은 간장밥 대표 : 홍찬 사업자등록번호 : 581-07-01133<br>
+                            서울시 마포구 양호로 45, 메세나 폴리스 몰 B112호<br>
+                            E-mail : haengbab@naver.com
+                        </address>
+                        <p class="copy">Copyright 2020 행복은 간장밥. ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <div class="col_right">
+                    <p>대표번호<br>070-8844-0935</p>
+                    <p>평일 : 09:00~18:00</p>
+                </div>
+            </div>
+        </div>
+        <!-- // fBot -->
+    </footer>
+    <!-- // footer -->
+</body>
+
+</html>

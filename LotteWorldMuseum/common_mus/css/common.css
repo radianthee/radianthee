@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* common.css 파일 입니다. */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+/* google Font set */
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 16px; line-height: 1; font-weight: normal; letter-spacing: -0.6px; color: #555;}
+
+/* Reset */
+html{height: 100%;} /* 윈도우 창크기 */
+/* body{overflow: hidden;} */ /*  #wrapper엔 적지않는다. */
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,p{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+button{border: 0; cursor: pointer;}
+ul{list-style: none;}
+a{text-decoration: none; color: #555;}
+img{vertical-align: top;} /* 이미지태그의 하단4px을 없애 줌 탑,바텀,미들 셋 중 하나 함 인라인들은 정렬이 안 맞으면 이렇게 흐트러짐*/
+
+/* 공 통 */
+#wrapper{ position: relative; overflow: hidden;}
+.container{max-width: 1170px; margin: 0 auto;}
+address{font-style: normal;}
+
+
+/* 유틸 영역 */
+#util{background-color: #fff;}
+#util .container{}
+#util .container::after{content: ""; display: block; clear: both;}
+#util .right{float: right;}
+#util .right .links{float: left;}
+#util .right .login{float: left;}
+
+
+/* ===============헤더 영역 =============== */
+#header{background-color: lime; position: relative; left: 0; top: 0; width: 100%; z-index: 300;}
+#header .container{position: relative;border: 1px solid red;}
+#header .container::after{content: ""; display: block; clear: both;}
+
+#header h1{background-color: aqua; float: left; position: relative; left: 0; top: -10px;} /* logo 이동 */
+
+#header .gnbArea{
+    background-color: burlywood ;
+    float: left; margin-left: 215px;position: relative; z-index: 1;
+} /* logo와 gnb의 간격 */
+#header .gnb > li{
+    border: 1px solid magenta; padding: 0 40px;
+    float: left; position: relative;
+} /* gnb의 여백 */  /* twoD의 기준이라 relative 걸어준다. */
+#header .gnb > li:first-child{margin-left: 0;}
+#header .gnb > li > a{display: block;font-size: 18px; padding: 15px 0 38px;}
+#header .gnbBg{display: none; background-color: #fff; position: absolute; left: 0; top: 71px; width: 100%; height: 300px; border-top: 2px solid #1c7c57;}
+
+/* 모바일헤더 */
+.mHeader, .mMenuArea{display: none;}
+
+/* Swiper slide css (복붙) */
+
+/* ========== 2 Depth ========== */
+#header .gnb > li > .twoD{
+    display: none; width: 100%; border: 1px solid blue;
+    padding: 35px 0;
+    position: absolute; left: 0; top: 71px; z-index: 1;
+}
+
+
+/* 푸터 영역 */
+#footer{border-top: 1px solid #e1e1e1;}
+#footer .container{border: 1px solid blue; padding:50px 0 130px;}
+#footer .top{border-bottom: 1px solid #e1e1e1; padding-bottom: 30px;}
+#footer .top::after{content: ""; display: block; clear: both;}
+#footer .top .links{background-color: yellowgreen; float: left;}
+#footer .top .links a{display: inline-block; line-height: 35px; margin-left: 16px;}
+#footer .top .links a:first-child{margin-left: 0;}
+#footer .top .links .cRed{color: red;}
+#footer .top .sns{float: right;}
+#footer .top .sns a{float: left;}
+
+#footer .bottom{font-size: 15px; color: #555; margin-top: 30px; position: relative;}
+#footer .bottom .left{float: left;}
+#footer .bottom .left address{font-style: normal;}
+#footer .bottom .left address p{color: #555; margin-top: 10px;  border: 1px solid red;}
+#footer .bottom .left address p:first-child{margin-top: 0;}
+
+#footer .bottom .familySite{}
+#footer .bottom .familySite{float: right; width: 200px; height: auto; position: relative; border: 1px solid #555;}
+#footer .bottom .familySite > span{display:block; height: 40px; line-height: 40px; padding-left: 20px; box-sizing: border-box; cursor: pointer;} 
+#footer .bottom .familySite > span::after{content: ""; display: inline-block; width: 9px; height: 5px; 
+    background-image: url(../images/sel_icon1.png); background-repeat: no-repeat; background-position: left center;
+    position: absolute; right: 20px; top: 50%;margin-top: -2.5px; transition: transfrom 0.3s ease;}
+#footer .bottom .familySite.on > span::after{transform:rotate(180deg);} /* 누르면 sel 아이콘이 180도 돌아감 span에 해도 됨 */
+#footer .bottom .familySite ul{display: none;position: absolute; right: 0; bottom: 40px; width: 200px;}
+#footer .bottom .familySite ul li{}
+#footer .bottom .familySite ul li a{background-color: teal; display: block; padding: 5px 0;}
+
+#footer .bottom .copy{font-size: 13px; margin-top: 30px; color: #777; letter-spacing: -0.1px;}
+
+
+
+
+
+
+
+
+
+
+

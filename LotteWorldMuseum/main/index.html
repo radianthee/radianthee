@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>민속박물관</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"></script>
+    <script src="../common_mus/js/common.js"></script>
+    <script src="../common_mus/js/main.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common_mus/css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="util">
+            <div class="container">
+                <div class="right">
+                    <div class="links">링크</div>
+                    <div class="login">로긴</div>
+                </div>
+            </div>
+        </div> <!-- // util -->
+        <header id="header">
+            <div class="container">
+                <h1><a href="#"><img src="../common_mus/images/logo.png" alt="logo"></a></h1>
+                <div class="gnbArea">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">이용안내</a>
+                            <div class="twoD">
+                                <ul>
+                                    <li><a href="#">박물관 소개</a></li>
+                                    <li><a href="#">관람안내</a>
+                                    <li><a href="#">대관안내</a>
+                                    <li><a href="#">오시는 길</a>
+                                    <li><a href="#">부대시설</a>
+                                        <div class="thrD">
+                                            <ul>
+                                                <li><a href="#">3Depth</a></li>
+                                                <li><a href="#">3Depth</a></li>
+                                                <li><a href="#">3Depth</a></li>
+                                            </ul>
+                                        </div> <!-- // thrD -->
+                                    </li>
+                                </ul>
+                            </div> <!-- // twoD -->
+                        </li>
+                        <li><a href="#">전시</a></li>
+                        <li><a href="#">교육프로그램</a></li>
+                        <li><a href="#">소통.소식</a></li>
+                    </ul> <!-- // gnb -->
+                </div>
+            </div> <!-- // container -->
+            <div class="gnbBg"></div>
+        </header>
+        <!-- // header -->
+        <!-- 모바일헤더 -->
+        <div class="mHeader">
+            <div>
+                <!-- 모바일버전 상단 로고+메뉴바 -->
+                <button class="menuBtn" type="button">전체메뉴</button>
+                <h1 class="logo"><a href="index.html"><img src="../common_mus/images/m_logo.png" alt="logo"></a></h1>
+            </div>
+        </div>
+        <div class="mMenuArea">
+            <!-- 메뉴 눌렀을때 나오는 전체 판 -->
+            <div class="top">
+                <a href="#" class="loginBt">로그인</a>
+                <button type="button" class="closeBt">전체메뉴닫기</button>
+            </div>
+            <div class="links">
+                <a href="#" class="lotteworld">롯데월드어드벤처</a>
+                <a href="#" class="icerink">아이스링크</a>
+            </div>
+            <div class="gnbArea">
+                <ul>
+                    <li>
+                        <a href="#" class="oneBt">이용안내</a>
+                        <div class="twoD">
+                            <ul>
+                                <li><a href="#">서브2</a></li>
+                                <li><a href="#">서브2</a></li>
+                                <li><a href="#" class="thrBt">서브2</a>
+                                    <div class="thrD">
+                                        <ul>
+                                            <li><a href="#">서브3</a></li>
+                                            <li><a href="#">서브3</a></li>
+                                            <li><a href="#">서브3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="oneBt">메뉴</a>
+                        <div class="twoD">
+                            <ul>
+                                <li><a href="#">서브2</a></li>
+                                <li><a href="#">서브2</a></li>
+                                <li><a href="#">서브2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="oneBt">메뉴</a></li>
+                    <li><a href="#" class="oneBt">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- // 모바일 헤더 -->
+        <div id="cBody">
+            <div class="swiper-container mainVisArea">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="../common_mus/images/gnb_bg0.jpg" alt="bg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="../common_mus/images/gnb_bg1.jpg" alt="bg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="../common_mus/images/gnb_bg2.jpg" alt="bg"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="../common_mus/images/gnb_bg3.jpg" alt="bg"></a></li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- swiper slide 들어 갈 자리 (복붙) -->
+            <div class="mainTodayArea">
+                <div class="container">
+                    <a href="#">
+                        <p class="mTit">운영시간</p>
+                        <div class="time">
+                            <p class="tit">평일</p>
+                            <p class="txt">11:00 - 19:00</p>
+                        </div>
+                        <div class="t-s-time">
+                            <p class="tit">주말/공휴일</p>
+                            <p class="txt">11:00 - 19:00</p>
+                        </div>
+                    </a>
+                </div>
+            </div> <!-- // mainTodayArea -->
+            <section class="mainCon1 mainCon">
+                <div class="container">
+                    <h2 class="mainTit">시대별 문화를<br>즐길 수 있는 전시</h2> <!-- <br>은 모바일용 -->
+                    <p class="mainTxt">현재 진행 중인 전시를 알아보세요.</p>
+                    <ul class="mainCon1List">
+                        <li><a href="#">
+                                <div class="imgArea"><img src="../common_mus/images/mainCon1_img1.jpg" alt="불상"></div>
+                                <div class="txtArea">상설전시</div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="imgArea"><img src="../common_mus/images/mainCon1_img2.jpg" alt="종"></div>
+                                <div class="txtArea">특별전시</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mainCon1Bg">
+                        <div class="t1"></div>
+                        <div class="t2"></div>
+                    </div> <!-- // maibCon1Bg -->
+                </div> <!-- // container -->
+            </section>
+            <section class="mainCon2 mainCon">
+                <div class="container">
+                    <h2 class="mainTit">민속박물관의 즐겁고<br>다양한 프로그램</h2>
+                    <p class="mainTxt">다양한 프로그램을 확인해보세요.</p>
+                    <ul class="mainCon2List">
+                        <li><a href="#">
+                                <div class="imgArea">
+                                    <img src="../common_mus/images/mainCon2_img1.jpg" alt="역사교육" class="pc">
+                                    <img src="../common_mus/images/mainCon2_img1_m.jpg" alt="역사교육" class="mobile">
+                                    <div class="dim">
+                                        <span class="icon"></span>
+                                    </div>
+                                </div>
+                                <div class="txtArea">전통문화/역사교육</div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="imgArea">
+                                    <img src="../common_mus/images/mainCon2_img2.jpg" alt="공예체험" class="pc">
+                                    <img src="../common_mus/images/mainCon2_img2_m.jpg" alt="공예체험" class="mobile">
+                                    <div class="dim">
+                                        <span class="icon"></span>
+                                    </div>
+                                </div>
+                                <div class="txtArea">전통공예체험</div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="imgArea">
+                                    <img src="../common_mus/images/mainCon2_img3.jpg" alt="사물놀이" class="pc">
+                                    <img src="../common_mus/images/mainCon2_img3_m.jpg" alt="사물놀이" class="mobile">
+                                    <div class="dim">
+                                        <span class="icon"></span>
+                                    </div>
+                                </div>
+                                <div class="txtArea">문화행사</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainCon3 mainCon">
+                <div class="container">
+                    <h2 class="mainTit">민속박물관 소식을 한눈에!</h2>
+                    <p class="mainTxt">오늘의 민속박물관 소식을 만나보세요.</p>
+                    <div class="mainNews">
+                        <div class="left">
+                            <p class="tit">민속박물관 소식</p>
+
+                            <div class="newsCon">
+                                <a href="#">
+                                    <p class="tit">[교육안내] 교육 프로그램 일시 중단 안내</p>
+                                    <span class="">2021.01.01</span>
+                                </a>
+                            </div>
+
+                            <ul class="newsList">
+                                <li><a href="#">게시글</a><span class="date">2021.01.12</span></li>
+                                <li><a href="#">게시글</a><span class="date">2021.01.12</span></li>
+                                <li><a href="#">게시글</a><span class="date">2021.01.12</span></li>
+                            </ul>
+                            <a href="#" class="newsMoreBt">더보기</a>
+                        </div>
+                        <div class="right">
+                            <div class="utilDiv">
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="txt">이용문의</span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon"></span>
+                                    <span class="txt">오시는 길</span>
+                                </a>
+                            </div>
+                            <div class="bannerDiv">
+                                <p class="tit">
+                                    우리 고유의 옛멋과<br>
+                                    품격을 선도합니다
+                                </p>
+                                <a href="#">전통혼례 바로가기</a>
+                            </div>
+                        </div> <!-- // right -->
+                    </div> <!-- // mainNews -->
+                </div> <!-- // container -->
+            </section>
+        </div> <!-- // cBody -->
+        <footer id="footer">
+            <div class="container">
+                <div class="top">
+                    <div class="links">
+                        <a href="#">롯데월드 소개</a>
+                        <a href="#">기업 제휴 및 입점 문의</a>
+                        <a href="#">이용약관</a>
+                        <a href="#" class="cRed">개인정보처리방침</a>
+                        <a href="#">사이트맵</a>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img src="../common_mus/images/sns_btn1.png" alt="페이스북"></a>
+                        <a href="#"><img src="../common_mus/images/sns_btn2.png" alt="인스타그램"></a>
+                        <a href="#"><img src="../common_mus/images/sns_btn3.png" alt="유튜브"></a>
+                    </div>
+                </div> <!-- // top -->
+                <div class="bottom">
+                    <div class="left">
+                        <address>
+                            <p>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 대표자 : 최홍훈</p>
+                            <p>사업자등록번호 : 219-85-00014 통신판매업신고번호 : 송파 제5513호 전화 : 1661-2000</p>
+                        </address>
+                        <p class="copy">COPYRIGHT 2018 LOTTEWORLD. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="familySite on">
+                        <span>패밀리사이트</span>
+                        <ul>
+                            <li><a href="#">롯데그룹</a></li>
+                            <li><a href="#">L.Point</a></li>
+                            <li><a href="#">롯데월드</a></li>
+                            <li><a href="#">롯데제과</a></li>
+                            <li><a href="#">롯데닷컴</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer> <!-- // footer -->
+        <div class="topBtn">
+            <a href="#"><img src="../common_mus/images/top_btn.png" alt="위로가기"></a>
+        </div>
+    </div>
+</body>
+
+</html>

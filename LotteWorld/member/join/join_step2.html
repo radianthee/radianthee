@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../common/css/style2.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 항상 이거로 만들어줘야함 -->
+        <!-- util header 들어 갈 자리 -->
+        <div id="cBody">
+            <div class="subWrap">
+                <div class="lnbArea">
+                    <div class="shareArea">
+                        <div class="share"><a href="#"><span class="blind">공유</span></a></div>
+                        <div class="print"><a href="#"><span class="blind">인쇄</span></a></div>
+                    </div>
+                </div> <!-- // lnbArea -->
+                <h2>회원가입</h2>
+                <div class="container">
+                    <div class="joinstep2">
+                        <div class="joinstep">
+                            <ul class="step">
+                                <li>약관동의</li>
+                                <li class="on">회원정보입력</li>
+                                <li>가입완료</li>
+                            </ul>
+                        </div><!-- // joinstep -->
+                        <h3>회원정보입력</h3>
+                        <form name="frm1" id="frm1" method="POST" action="">
+                            <h4>기본정보입력</h4>
+                            <fieldset>
+                                <!-- from태그 안에서 하위요소로 구성 가능 -->
+                                <legend class="blind">회원가입 기본정보입력</legend>
+                                <div class="tableType2">
+                                    <table>
+                                        <caption class="blind">회원가입 기본정보입력</caption>
+                                        <colgroup>
+                                            <col width="20%"> <!-- html로 작성 -->
+                                            <col width="*">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th><label for="userName">이름</label><span>*</span></th>
+                                                <td><span><input type="text" class="inp_text wd580"
+                                                            id="userName"></span></td> <!-- 아이디 치는 란 -->
+                                            </tr>
+                                            <tr>
+                                                <th><label for="userEmail">이메일주소</label><span>*</span></th>
+                                                <td><span><input type="email" class="inp_text wd580"
+                                                            id="userEmail"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="userPw">비밀번호</label><span>*</span></th>
+                                                <td><span><input type="password" class="inp_text wd580"
+                                                            id="userPw"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="userPwchk">비밀번호확인</label><span>*</span></th>
+                                                <td><span><input type="password" class="inp_text wd580"
+                                                            id="userPwchk"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <th>휴대폰번호<span>*</span></th>
+                                                <td>
+                                                    <div>
+                                                        <select class="sel wd105">
+                                                            <option>SKT</option>
+                                                            <option>KT</option>
+                                                            <option>LGT</option>
+                                                        </select>
+                                                        <select class="sel wd105">
+                                                            <option>선택</option>
+                                                            <option>010</option>
+                                                            <option>011</option>
+                                                        </select>
+                                                        <input type="text" class="inp_text wd175">-<input type="text"
+                                                            class="inp_text wd175"> <!-- -없이 하려면 type=tel -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>생년월일<span>*</span></th>
+                                                <td>
+                                                    <div>
+                                                        <select class="sel wd105">
+                                                            <option>년도</option>
+                                                            <option>1991</option>
+                                                            <option>1992</option>
+                                                            <option>1993</option>
+                                                            <option>1994</option>
+                                                        </select>
+                                                        <select class="sel wd105">
+                                                            <option>월</option>
+                                                            <option>1월</option>
+                                                            <option>2월</option>
+                                                            <option>3월</option>
+                                                            <option>4월</option>
+                                                        </select>
+                                                        <select class="sel wd105">
+                                                            <option>일</option>
+                                                            <option>1일</option>
+                                                            <option>2일</option>
+                                                            <option>3일</option>
+                                                            <option>4일</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- // tableTypo2 -->
+                            </fieldset>
+                            <h4>부가정보입력</h4>
+                            <fieldset>
+                                <legend class="blind">회원가입 부가정보입력</legend>
+                                <div class="tableType2">
+                                    <table>
+                                        <caption class="blind">회원가입 부가정보입력</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;"> <!-- 인라인스타일로 작성 -->
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>마케팅 정보 수신동의</th>
+                                                <td>
+                                                    <span class="inp_bx">
+                                                        <input type="radio" id="id1" name="userEmailYn"><label
+                                                            for="id1">동의</label> <!-- radio는 동그란 체크모양 -->
+                                                    </span> <!-- name의 userEmailYn은 중복으로 눌러지는걸 방지해주는거임 하나씩 눌러짐 -->
+                                                    <span class="inp_bx">
+                                                        <input type="radio" id="id2" name="userEmailYn"><label
+                                                            for="id2">동의하지 않음</label> <!-- radio는 동그란 체크모양 -->
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>관심정보</th>
+                                                <td>
+                                                    <span class="inp_bx">
+                                                        <input type="checkbox" id="id3" name="intst"><label
+                                                            for="id3">요리</label> <!-- chekbox는 네모난 체크모양 -->
+                                                    </span> <!-- checkbox는 타입자체가 하나만 선택되는게 아님. -->
+                                                    <span class="inp_bx">
+                                                        <input type="checkbox" id="id4" name="intst"><label
+                                                            for="id4">인테리어</label> <!-- label,체크박스 앞뒤상관X -->
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
+                            <div class="btnArea">
+                                <button type="reset" id="cancelBtn" class="Btn">작성취소</button>
+                                <button type="submit" id="registerBtn" class="Btn">가입신청</button>
+                            </div>
+                        </form>
+                    </div> <!-- // joinstep2 -->
+                </div><!-- // container -->
+            </div>
+        </div><!-- // cBody -->
+        <!-- footer 들어 갈 자리 -->
+    </div>
+</body>
+
+</html>

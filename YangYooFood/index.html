@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>양유밥유</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="강희성의 포트폴리오 웹사이트">
+    <meta name="subject" content="주제">
+    <meta name="keywords" content="yangyoo, 양유, 대표홈페이지, 청년떡집, 우주인피자, 만두몬스터, 에브리밀, 달빛야식, 영양찜닭, 맘앤대디, 그래서, 바삭">
+    <meta name="author" content="강희성">
+    <meta name="description" content="푸드로 세상을 즐겁게 happy food happy world">
+    <!-- 1. 스타일 파일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 2. 스크립트 파일 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="aligner">
+            <h1>
+                <a href="#"><img src="images/logo.svg" alt="YANGYOO"></a>
+            </h1>
+            <button type="button" class="open">메뉴열기</button>
+            <div class="drawer">
+                <div class="head">
+                    <button type="button" class="close">메뉴닫기</button>
+                </div>
+                <div class="body">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">ABOUT</a></li>
+                            <li class="parent">
+                                <!-- 액티브로 설정해야 2뎁스가 보인다.(서브메뉴의 상위요소에 붙는다.) -->
+                                <a href="#">BRAND</a>
+                                <ul>
+                                    <li><a href="#">청년떡집</a></li>
+                                    <li><a href="#">우주인피자</a></li>
+                                    <li><a href="#">맘앤대디</a></li>
+                                    <li><a href="#">작업중</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">R&amp;D</a></li>
+                            <li><a href="#">RECRUIT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="lang">
+                        <a href="#" class="pc"><img src="images/kor_on_pc.jpg" alt="KOR"></a>
+                        <a href="#" class="pc"><img src="images/eng_off_pc.png" alt="ENG"></a>
+                        <a href="#" class="mob"><img src="images/kor_on_mob.jpg" alt="ENG"></a>
+                        <a href="#" class="mob"><img src="images/eng_off_mob.jpg" alt="ENG"></a>
+                    </div>
+                </div>
+            </div><!-- // drawer -->
+        </div><!-- // aligner -->
+    </header> <!-- // header -->
+    <div class="slide-wrap">
+        <div class="main-msg">
+            <p class="txt">HAPPY&nbsp;&nbsp;FOOD<br>HAPPY&nbsp;&nbsp;WORLD</p>
+        </div>
+        <ul class="main-slide">
+            <li>
+                <img src="images/1920_main1.jpg" alt="main1">
+            </li>
+            <li>
+                <img src="images/1920_main2.jpg" alt="main2">
+            </li>
+        </ul>
+    </div>
+    <main class="contents">
+        <section class="sec-1">
+            <h2 class="heading">
+                <img src="images/heading-yangyoo-story.svg" alt="양유스토리">
+            </h2>
+            <p class="paragraph">
+                삶의 순간순간,<br>
+                잠시 고단한 마음을 내려놓고<br>
+                오롯이 먹는 것에 집중하길<br>
+                기쁘게 음미하고 행복으로 기억되길<br>
+                고로, 세상이 좀더 즐거워지기를<br>
+                음식을 만드는 양유의 진심입니다.
+            </p>
+            <div class="more">
+                <a href="#" title="About 더보기">더보기</a>
+            </div>
+            <div class="vd">
+                <!-- frameborder ="0" 은 기본이다. 테두리 없애줌 -->
+                <iframe src="https://player.vimeo.com/video/460431005" frameborder="0" allow="autoplay; fullscreen"
+                    allowfullscreen></iframe>
+            </div>
+        </section> <!-- 같은건데 1,2 로 나뉘는거면 div 해도되지만, 전혀 다른거면 섹션으로 가자(다루는 내용이 다름) -->
+        <section class="sec-2">
+            <h2 class="heading">
+                <img src="images/heading-brand-list.svg" alt="브랜드리스트">
+            </h2>
+            <div class="brand">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="thumb"><img src="images/brand-youngmill.png" alt="logo"></span>
+                            <span class="name">청년떡집</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <span class="thumb"><img src="images/brand-woozooin.png" alt="logo"></span>
+                            <span class="name">우주인피자</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <span class="thumb"><img src="images/brand-momanddaddy.png" alt="logo"></span>
+                            <span class="name">맘앤대디</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <span class="thumb"><img src="images/brand-momanddaddy.png" alt="logo"></span>
+                            <span class="name">작업대기중</span>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- // brand -->
+            <div class="more">
+                <a href="images/1920_main2.pdf" title="클릭하시면 회사소개서를 다운로드 받을 수 있습니다.">회사소개서다운로드</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="aligner">
+            <p class="logo"><img src="images/logo-gray.svg" alt="yangyoo"></p>
+            <address>
+                (주)양유대표 : 오경아 서울시 서초구 방배천로 12-4 천일빌딩 2-5층<br>
+                사업자등록번호 : 108-81-29256브랜드문의 : aka.odi@yangyoo.com<br>
+                T. 02-523-5780F. 02-523-5781
+            </address>
+            <p class="Copyright">
+                Copyright&copy;YANGYOO. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

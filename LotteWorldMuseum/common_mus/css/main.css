@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* main.css 파일 입니다. */
+/* 메인페이지를 위한 css 파일입니다. */
+
+
+/*  swiper */
+.mainVisArea .swiper-wrapper .swiper-slide img{width: 100%;}
+.mainVisArea .swiper-pagination {}
+.mainVisArea .swiper-pagination .swiper-pagination-bullet{}
+.mainVisArea .swiper-pagination .playBt{position: absolute;}
+.mainVisArea .swiper-pagination .playBt.on{}
+
+/* mainTodayArea */
+.mainTodayArea{width: 1170px; margin: 0 auto; padding: 25px 0; position: relative; text-align: center;  top: 150px; opacity: 0; border-bottom: 1px solid #e1e1e1;}
+.mainTodayArea::after{content: ""; display: block; clear: both;}
+.mainTodayArea a{display: block; font-size: 20px; color: #1a1a1a;}
+.mainTodayArea a .mTit { display: inline-block; vertical-align: top; font-size: 18px; font-weight: 700; font-family: 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif; color: #1a1a1a; line-height: 31px; padding-left: 50px; margin-right: 30px; background: url(../images/time_icon.png) no-repeat 0 center;}
+.mainTodayArea a .time {display: inline-block; vertical-align: top;}
+.mainTodayArea a .tit { float: left;  font-size: 18px;  line-height: 31px; color: #1a1a1a;}
+.mainTodayArea a .txt { float: left; font-family:  'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 18px; font-weight: 700; line-height: 31px; color: #1a1a1a;  margin-left: 20px;}
+.mainTodayArea a .t-s-time {display: inline-block; vertical-align: top; position: relative;  margin-left: 20px; padding-left: 20px;}
+.mainTodayArea a .t-s-time::before { content: ''; display: block; position: absolute; top: 50%; left: 0;  margin-top: -8px;  width: 1px;  height: 19px;  background: #e1e1e1;}
+
+/* mainCon1 */ 
+.mainCon1{ color: #fff;background: url(../images/mainCon1_bg.jpg) no-repeat center center; background-size: cover; position: relative;}
+.mainCon1 .container .mainTit,
+.mainCon1 .container .mainTxt{color: #fff; position: relative; z-index: 1;}
+.mainCon1 .mainCon1Bg{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.mainCon1 .mainCon1Bg .t1{  background: url(../images/mainCon1Bg_t1_img.jpg) no-repeat center center; background-size: cover; width: 100%; height: 100%; position: absolute; left: 0; top: 0;  display: none;}
+.mainCon1 .mainCon1Bg .t2{  background: url(../images/mainCon1Bg_t2_img.jpg) no-repeat center center ;  background-size: cover;  width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: none;}
+
+
+
+.mainCon{padding: 120px 0;}
+.mainCon .mainTit{font-size: 40px;}
+.mainCon .mainTxt{font-size: 18px; margin-top: 30px;}
+.mainCon .mainTit br{display: none;}
+
+.mainCon .mainTit,
+.mainCon .mainTxt{text-align: center; color: #000; top: 150px; opacity: 0;}
+
+.mainCon1 .mainCon1List{margin-top: 60px; text-align: center; position: relative; z-index: 1; top: 150px; opacity: 0;}
+.mainCon1 .mainCon1List::after{content: ""; display: block; clear: both;}
+.mainCon1 .mainCon1List li{float: left; width: 574px; margin-left: 22px; }
+.mainCon1 .mainCon1List li:nth-child(1){margin-left: 0;}
+.mainCon1 .mainCon1List li a{display: block;  position: relative; color: #fff;}
+
+.mainCon1 .mainCon1List li a::after{content: ""; display: block; width: 100%; height: 100%; border: 2px solid #fff; position: absolute; left: 0; top: 0; box-sizing: border-box; transition: all 0.4s ease-in; opacity: 0;}
+.mainCon1 .mainCon1List li a:hover::after{opacity: 1;}
+
+.mainCon1 .mainCon1List li a .imgArea img{width: 100%; height: auto;}
+
+/* mainCon2 */
+
+.mainCon2{background: url(../images/mainCon2_bg.jpg) no-repeat; background-size: cover;}
+.mainCon2 .mainCon2List{margin-top: 60px; position: relative; opacity: 0;  top: 150px;}
+.mainCon2 .mainCon2List::after{content: ""; display: block; clear: both;}
+.mainCon2 .mainCon2List li{float: left; width: 375px; margin-left: 22px; }
+.mainCon2 .mainCon2List li:first-child{margin-left: 0;}
+.mainCon2 .mainCon2List li a{display: block; transition: all 0.3s; box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+.mainCon2 .mainCon2List li a:hover{box-shadow: 20px 25px 40px 0 rgba(0, 0, 0, 0.2);}
+.mainCon2 .mainCon2List li a .imgArea{position: relative;}
+.mainCon2 .mainCon2List li a .imgArea img{width: 100%; height: auto;}
+.mainCon2 .mainCon2List li a .imgArea img.mobile{display: none;}
+.mainCon2 .mainCon2List li a .imgArea .dim{background-color: rgba(0, 0, 0, 0.9); position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; transition: all 0.3s ease; }
+.mainCon2 .mainCon2List li a:hover .imgArea .dim{background-color: rgba(0, 0, 0, 0);}
+.mainCon2 .mainCon2List li a .imgArea .dim .icon{opacity: 0; transition: all 0.3s ease; background: #e1e1e16c url(../images/zoom-in.png) no-repeat center center; background-size: auto 36px; display: block; position: absolute; left: 50%; top: 100%; transform: translate(-50% , -50%); width: 60px; height: 60px; border-radius: 50%}
+.mainCon2 .mainCon2List li a:hover .imgArea .dim .icon{opacity: 1; top: 50%; transform: translate(-50% , -50%);}
+.mainCon2 .mainCon2List li a .txtArea{padding:  25px 0 30px; text-align: center; background-color: #fff; font-size: 22px; font-weight: bold; color: #000; transition: all 0.3s ease;}
+.mainCon2 .mainCon2List li a:hover .txtArea{color: #fff; background-color: #127629;}
+
+/* maincon3 */
+.mainCon3 .mainNews{position: relative; top: 150px; opacity: 0;}
+.mainCon3 .mainNews::after{content: ""; display: block; clear: both;}
+.mainCon3 .left{background-color: red; float: left; width: 574px; padding: 40px; border: 1px solid #d8d8d8; box-sizing: border-box;}
+.mainCon3 .left .newsList{}
+.mainCon3 .left .newsList li{line-height: 28px;} /* height 또는 line-height */
+.mainCon3 .left .newsList li::after{content: ""; display: block; clear: both;}
+.mainCon3 .left .newsList li a{background-color: yellow; position: relative; display: inline-block; font-size: 18px; width: calc(100% - 80px);}
+.mainCon3 .left .newsList li a:hover{text-decoration: underline;}
+.mainCon3 .left .newsList li span.date{background-color: cadetblue; float: right; font-size: 16px; width: 80px; text-align: right;}
+.mainCon3 .left{background-color: #f0f0f0; float: left; width: 574px; position: relative;}
+.mainCon3 .left .newsMoreBt{display: inline-block; padding-right: 30px; border: 1px solid blue; font-size: 15px; line-height: 20px; background-image: url(../images/newsMoreBt_icon.png); background-repeat: no-repeat; background-position: right center;
+position: absolute; right: 40px; top: 40px;}
+.mainCon3 .right{float: left; width: 574px; margin-left: 22px;}
+.mainCon3 .right .utilDiv{}
+.mainCon3 .right .utilDiv::after{content: ""; display: block; clear: both;}
+.mainCon3 .right .utilDiv a{display: block; float: left; border: 1px solid #d9d9d9; width: 276px; box-sizing: border-box; padding: 40px 0; text-align: center; font-weight: 700;}
+.mainCon3 .right .utilDiv a:first-child{margin-right: 22px;}
+.mainCon3 .right .utilDiv a span{display: block;}
+.mainCon3 .right .utilDiv a .icon{background: url(../images/mainCon3_util1_img1.png) no-repeat center center; height: 65px; padding-bottom: 25px;}
+.mainCon3 .right .utilDiv a:last-child .icon{background-image: url(../images/mainCon3_util1_img2.png);}
+
+.mainCon3 .right .bannerDiv{margin-top: 22px; padding: 40px; background: url(../images/mainCon3_banner.jpg) no-repeat center center; background-size: cover;}
+.mainCon3 .right .bannerDiv .tit{font-size: 32px; line-height: 38px; color: #fff;}
+.mainCon3 .right .bannerDiv a{display: inline-block; margin-top: 20px; padding-right: 40px; position: relative; color: #fff;}
+.mainCon3 .right .bannerDiv a::after{content: ""; display: block; background: url(../images/mainCon3_banner_icon.png); width: 29px; height: 12px; position: absolute; right: 0; top: 3px;}
+
+.topBtn{position: fixed; right: 0; bottom: 280px; border: 1px solid red; z-index: 2;}
+
+
+
+
+
+/* ========== 모바일 0 ~ 758px ========== */
+@media (max-width:758px){
+    /* 공통 */
+    .container{width: 100%;} /* 양쪽 여백을 5% 주기때문에 90%라고 설정해도된다. */
+
+    #util, #header{display: none;}
+    .mHeader{display: block;}
+    
+    .mHeader > div{height: 50px; border-bottom: 1px solid #e1e1e1; position: relative;}
+    .mHeader .menuBtn{position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 25px; height: 17px; background: url(../images/m_gnb_btn.png) no-repeat; background-size: 25px auto; text-indent: -9999px;} /* width를 줄이면 height는 알아서 줄어드니까 auto */
+    .mHeader > div .logo{position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+    .mHeader > div .logo img{width: 57px;}
+
+    .mMenuArea{display: block; background-color: #fff; position: absolute; left: -100%; top: 0; width: 100%; height: 100%; z-index: 3;}
+
+    .mMenuArea .top{background-color: #128960; position: relative; height: 50px;}
+    .mMenuArea .loginBt{position: absolute; left: 15px; top: 50%; color: #f8f8f8; transform: translateY(-50%); font-size: 14px; height: 20px; line-height: 20px; color: #fff; display: block; background: url(../images/m_login_icon.png) no-repeat; background-size: auto 20px; padding-left: 25px;}
+    .mMenuArea .closeBt{position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: url(../images/m_close_btn.gif) no-repeat; background-size: 15px auto; width: 15px; height: 15px; text-indent: -9999px;} /* 모바일메뉴 X버튼 */
+
+    .mMenuArea .links{border-bottom: 1px solid #dadada;}
+    .mMenuArea .links::after{content: ""; display: block; clear: both;}
+    .mMenuArea .links a{display: block; float: left; width: 50%; height: 60px;text-indent: -9999px; border-left: 1px solid #e1e1e1; box-sizing: border-box;}
+    .mMenuArea .links .lotteworld{background: #f8f8f8 url(../images/m_lotteworld_btn.gif) no-repeat 50% 50%; background-size: 132px auto; border-left: 0;}
+    .mMenuArea .links .icerink{background: #f8f8f8 url(../images/m_icerink_btn.gif) no-repeat 50% 50%; background-size: 80px auto;}
+    
+    
+    .mMenuArea .gnbArea{}
+    .mMenuArea .gnbArea > ul{}
+    .mMenuArea .gnbArea > ul > li{}
+    .mMenuArea .gnbArea > ul > li > a{display: block; background: url(../images/m_oneD_icon.png) no-repeat 95% center; background-size: 15px; padding: 20px 15px; font-size: 17px; font-weight: 700;border-bottom: 1px solid #e1e1e1; }
+    .mMenuArea .gnbArea > ul > li.on > a{background: #f2f2f2 url(../images/m_oneD_icon_on.png) no-repeat 95% center; background-size: 15px; color: #128960;}
+    
+
+    .mMenuArea .gnbArea .twoD{display: none; background-color: #f2f2f2; padding: 0 15px; border-bottom: 1px solid #dadada;}
+    .mMenuArea .gnbArea .twoD > ul{}
+    .mMenuArea .gnbArea .twoD > ul > li{}
+    .mMenuArea .gnbArea .twoD > ul > li > a{display: block; border-bottom: 1px solid #dadada; padding: 13px 15px;}
+    .mMenuArea .gnbArea .twoD > ul > li > a.thrBt{ background: url(../images/thrBt.png) no-repeat right 15px center; background-size: 20px auto; }
+    .mMenuArea .gnbArea .twoD > ul > li > a.thrBt.on{background-image: url(../images/thrBt_on.png); font-weight: bold; color: #000;}
+
+
+
+    .mMenuArea .gnbArea .twoD .thrD{ display: none; background-color: #f2f2f2; padding: 10px 20px; font-size: 15px;}
+    .mMenuArea .gnbArea .twoD .thrD ul{}
+    .mMenuArea .gnbArea .twoD .thrD ul li{}
+    
+    .mMenuArea .gnbArea .twoD .thrD ul li a{display: block; padding: 10px 0;}
+    
+    .mainTodayArea{
+        top: 0;
+        opacity: 1;
+    }
+
+    .mainCon1{color: #fff;background: url(../images/mainCon1_bg_m.jpg) no-repeat center center; background-size: cover;}
+
+    .mainCon{padding: 60px 3% 50px;}
+    .mainCon .mainTit{font-size: 23px;}
+    .mainCon .mainTxt{display: none;}
+    .mainCon .mainTit br{display: block;}
+
+    .mainCon1 .mainCon1List{margin-top: 25px;}
+    .mainCon1 .mainCon1List li{width: 100%; margin-left: 0; float: none;}
+    
+
+
+
+    .mainCon2 .mainTit{font-size: 23px;}
+    .mainCon2 .mainCon2List{margin-top: 25px;}
+    .mainCon2 .mainCon2List li{float: left; width: 48.5%; margin-left: 3%; }
+    .mainCon2 .mainCon2List li:nth-of-type(3){float: none; clear: both; margin: 0 auto; padding-top: 10px;} /* :nth-of-type()은 좀더 세밀하게 세어준다. ex 다른태그가 중간에 섞여 있을 때. */
+    /* margin-top 으로 줘도되지만 마진상쇄 작용 때문에 패딩으로 준다. */
+    .mainCon2 .mainCon2List li a .imgArea img.pc{display: none;}
+    .mainCon2 .mainCon2List li a .imgArea img.mobile{display: block;}
+    .mainCon2 .mainCon2List li a .txtArea{padding: 15px 5%; font-size: 14px;}
+
+
+    .mainCon3 .mainNews .left{float: none; width: 100%; padding: 20px 4%;}
+    .mainCon3 .mainNews .left .newsMoreBt{position: absolute; right: 4%; top: 20px; text-indent: -9999px;}
+
+    .mainCon3 .mainNews .right{float: none; width: 100%; margin-left: 0;}
+    .mainCon3 .mainNews .right .utilDiv a{font-size: 14px; width: 48.5%; padding: 30px 0;}
+    .mainCon3 .mainNews .right .utilDiv a:first-child{margin-right: 3%;}
+    
+    .mainCon3 .right .utilDiv a .icon{height: 43px; background-size: 33px auto; border: 1px solid red; padding-bottom: 20px;}
+
+    .mainCon3 .right .bannerDiv .tit{font-size: 20px; line-height: 25px; color: #fff;}
+    .mainCon3 .right .bannerDiv a{font-size: 14px; margin-top: 10px; padding-right: 20px;}
+    .mainCon3 .right .bannerDiv a::after{width: 15px; height: 6px; top: 5px; background-size: 100%;}
+
+
+    /* footer */
+
+    #footer .container{padding: 25px 3% 45px; box-sizing: border-box;} /* box-sizing 해줘야 딱 맞는다. */
+    #footer .top{border: 0; padding-bottom: 0;}
+
+    #footer .bottom{padding-top: 55px;}
+    #footer .bottom .left{float: none;}
+    #footer .bottom .familySite{float: none; position: absolute; left: 0; top: 0; width: 100%;}
+    
+    
+    
+
+
+} /* 758px */
