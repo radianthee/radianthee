@@ -24,7 +24,7 @@
 .store-map .kakao-map .store-srch > button span{font-size: 16px; color: #fff; font-weight: 500;}
 .store-map .kakao-map .store-srch > button:nth-child(1){background-color: #d60037;}
 .store-map .kakao-map .store-srch > button:nth-child(2){background-color: #54565a; margin-left: -4px;}
-.store-map .kakao-map .store-srch .stre-wrap{width: 260px; height: 450px; box-sizing: border-box; overflow: scroll;display: none; overflow: hidden; }
+.store-map .kakao-map .store-srch .stre-wrap{width: 260px; height: 450px; box-sizing: border-box; overflow: scroll;display: none;}
 .store-map .kakao-map .store-srch .stre-wrap.onclick{display: block; overflow: visible;}
 .store-map .kakao-map .store-srch .stre-wrap li{width: 260px; height: 123px; position: relative; padding:24px 0 24px 20px; box-sizing: border-box; background-color: #fff; border: 1px solid #e1e1e1; border-collapse: collapse;}
 .store-map .kakao-map .store-srch .stre-wrap li.here{background-color: #fdf2f5;}
